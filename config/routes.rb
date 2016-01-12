@@ -1,7 +1,21 @@
 Rails.application.routes.draw do
+  devise_for :users
   root "pages#home"
   get "about" => "pages#about" #creates about_path
   get "products" => "pages#products"
+     #Pages for the Products
+     get "shirts" => "pages#shirts"
+     get "buttonups" => "pages#buttonups"
+     get "shorts" => "pages#shorts"
+     get "pants" => "pages#pants"
+     get "suits" => "pages#suits"
+     get "dresses" => "pages#dresses"
+     get "womenpants" => "pages#womenpants"
+     get "womenshirts" => "pages#womenshirts"
+     get "wallets" => "pages#wallets"
+     get "watches" => "pages#watches"
+     get "jewelry" => "pages#jewelry"
+     get "purses" => "pages#purses"
   get "faqs" => "pages#faqs"
   get "contact" => "pages#contact"
   
