@@ -22,6 +22,7 @@ ruby '2.0.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'bootstrap-sass'
 gem 'devise', '~>  3.4.1'
+gem 'paperclip', github: 'thoughtbot/paperclip'
 
 
 group :development, :test do
