@@ -41,7 +41,8 @@
         <li><%= link_to "Products", products_path %></li>
         <li><%= link_to "FAQs", faqs_path %></li>
         <li><%= link_to "Contact Us", contact_path %></li>
-      <% if user_signed_in? %>  
+      <% if user_signed_in? %> 
+        <li><%= link_to 'New Pin', new_pin_path %></li> 
         <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
         <li><%= link_to "Account Settings", edit_user_registration_path %></li>
       <% end %>
