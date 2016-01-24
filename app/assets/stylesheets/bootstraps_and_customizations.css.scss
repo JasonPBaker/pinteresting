@@ -1,15 +1,17 @@
 
 
-$body-bg: #7f8c8d;
+$body-bg: red;
 $navbar-height:  45px;
 $navbar-default-bg: #f1c40f;
 $navbar-default-brand-color: #2c3e50;
 $brand-primary: #f1c40f; 
-$jumbotron: #f1c40f; 
+$jumbotron: White;
 
 
 
+@import 'bootstrap-sprockets';
 @import 'bootstrap';
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
 
 .center {
 	text-align: center;
