@@ -4,7 +4,11 @@ class PinsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
  
   def index
-    @pins = Pin.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 2)
+    @pins = Pin.all.order("created_at DESC")
+    # Limits the amount of pins on the page --> .paginate(:page => params[:page], :per_page => 2)
+    #<div class="center">
+    #<%= will_paginate @posts, renderer: BootstrapPagination::Rails %>
+    #</div>
   end
 
   
